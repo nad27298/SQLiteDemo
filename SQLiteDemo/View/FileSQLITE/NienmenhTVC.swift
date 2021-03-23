@@ -9,15 +9,16 @@ import UIKit
 
 class NienmenhTVC: UITableViewCell {
 
+    @IBOutlet weak var lblID: UILabel!
+    @IBOutlet weak var lblNguhanh: UILabel!
+    @IBOutlet weak var lblNienmenh: UILabel!
+    @IBOutlet weak var lblGiainghia: UILabel!
+    @IBOutlet weak var lblNguhanhID: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
 }

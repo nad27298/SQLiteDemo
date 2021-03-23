@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DF4374919B2E9A73143DD70 /* Pods_SQLiteDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1CBBC9389A071CF799A18E /* Pods_SQLiteDemo.framework */; };
 		FA7F6B0626097E3E00CF9A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B0526097E3E00CF9A50 /* AppDelegate.swift */; };
 		FA7F6B0826097E3E00CF9A50 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B0726097E3E00CF9A50 /* SceneDelegate.swift */; };
-		FA7F6B0A26097E3E00CF9A50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B0926097E3E00CF9A50 /* ViewController.swift */; };
 		FA7F6B0D26097E3E00CF9A50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B0B26097E3E00CF9A50 /* Main.storyboard */; };
 		FA7F6B0F26097E4200CF9A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B0E26097E4200CF9A50 /* Assets.xcassets */; };
 		FA7F6B1226097E4200CF9A50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B1026097E4200CF9A50 /* LaunchScreen.storyboard */; };
+		FA7F6B222609827600CF9A50 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B212609827600CF9A50 /* HomePageVC.swift */; };
+		FA7F6B262609839C00CF9A50 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B252609839C00CF9A50 /* Extensions.swift */; };
+		FA7F6B2B2609842200CF9A50 /* xemboi.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B292609842200CF9A50 /* xemboi.sqlite */; };
+		FA7F6B2C2609842200CF9A50 /* boi.db in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B2A2609842200CF9A50 /* boi.db */; };
+		FA7F6B322609873C00CF9A50 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B312609873C00CF9A50 /* SQLiteDatabase.swift */; };
+		FA7F6B3826098A9400CF9A50 /* NienmenhEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B3726098A9400CF9A50 /* NienmenhEntity.swift */; };
+		FA7F6B3D26098D8D00CF9A50 /* NienmenhModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B3C26098D8D00CF9A50 /* NienmenhModel.swift */; };
+		FA7F6B4126098FB700CF9A50 /* FileSQLiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B4026098FB700CF9A50 /* FileSQLiteVC.swift */; };
+		FA7F6B4A260993E200CF9A50 /* NienmenhTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B48260993E200CF9A50 /* NienmenhTVC.swift */; };
+		FA7F6B4B260993E200CF9A50 /* NienmenhTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B49260993E200CF9A50 /* NienmenhTVC.xib */; };
+		FA7F6B4E2609A29700CF9A50 /* BoibaiEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B4D2609A29700CF9A50 /* BoibaiEntity.swift */; };
+		FA7F6B552609A60600CF9A50 /* BoibaiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B542609A60600CF9A50 /* BoibaiModel.swift */; };
+		FA7F6B582609C1D700CF9A50 /* FileDBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B572609C1D700CF9A50 /* FileDBVC.swift */; };
+		FA7F6B5C2609C21F00CF9A50 /* BoibaiTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6B5A2609C21F00CF9A50 /* BoibaiTVC.swift */; };
+		FA7F6B5D2609C21F00CF9A50 /* BoibaiTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7F6B5B2609C21F00CF9A50 /* BoibaiTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60350B51D56B731D42C8C673 /* Pods-SQLiteDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiteDemo.release.xcconfig"; path = "Target Support Files/Pods-SQLiteDemo/Pods-SQLiteDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A38104A6A70199CA60450D34 /* Pods-SQLiteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQLiteDemo.debug.xcconfig"; path = "Target Support Files/Pods-SQLiteDemo/Pods-SQLiteDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1CBBC9389A071CF799A18E /* Pods_SQLiteDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQLiteDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F6B0226097E3E00CF9A50 /* SQLiteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7F6B0526097E3E00CF9A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7F6B0726097E3E00CF9A50 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA7F6B0926097E3E00CF9A50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA7F6B0C26097E3E00CF9A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7F6B0E26097E4200CF9A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7F6B1126097E4200CF9A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7F6B1326097E4200CF9A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7F6B212609827600CF9A50 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		FA7F6B252609839C00CF9A50 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA7F6B292609842200CF9A50 /* xemboi.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = xemboi.sqlite; sourceTree = "<group>"; };
+		FA7F6B2A2609842200CF9A50 /* boi.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = boi.db; sourceTree = "<group>"; };
+		FA7F6B312609873C00CF9A50 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		FA7F6B3726098A9400CF9A50 /* NienmenhEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NienmenhEntity.swift; sourceTree = "<group>"; };
+		FA7F6B3C26098D8D00CF9A50 /* NienmenhModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NienmenhModel.swift; sourceTree = "<group>"; };
+		FA7F6B4026098FB700CF9A50 /* FileSQLiteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSQLiteVC.swift; sourceTree = "<group>"; };
+		FA7F6B48260993E200CF9A50 /* NienmenhTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NienmenhTVC.swift; sourceTree = "<group>"; };
+		FA7F6B49260993E200CF9A50 /* NienmenhTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NienmenhTVC.xib; sourceTree = "<group>"; };
+		FA7F6B4D2609A29700CF9A50 /* BoibaiEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoibaiEntity.swift; sourceTree = "<group>"; };
+		FA7F6B542609A60600CF9A50 /* BoibaiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoibaiModel.swift; sourceTree = "<group>"; };
+		FA7F6B572609C1D700CF9A50 /* FileDBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDBVC.swift; sourceTree = "<group>"; };
+		FA7F6B5A2609C21F00CF9A50 /* BoibaiTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoibaiTVC.swift; sourceTree = "<group>"; };
+		FA7F6B5B2609C21F00CF9A50 /* BoibaiTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoibaiTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF4374919B2E9A73143DD70 /* Pods_SQLiteDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA869DBBD9B39883706FE33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A38104A6A70199CA60450D34 /* Pods-SQLiteDemo.debug.xcconfig */,
+				60350B51D56B731D42C8C673 /* Pods-SQLiteDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6266C9D8D6189D2327FD1188 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB1CBBC9389A071CF799A18E /* Pods_SQLiteDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA7F6AF926097E3E00CF9A50 = {
 			isa = PBXGroup;
 			children = (
 				FA7F6B0426097E3E00CF9A50 /* SQLiteDemo */,
 				FA7F6B0326097E3E00CF9A50 /* Products */,
+				2CA869DBBD9B39883706FE33 /* Pods */,
+				6266C9D8D6189D2327FD1188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +110,131 @@
 			children = (
 				FA7F6B0526097E3E00CF9A50 /* AppDelegate.swift */,
 				FA7F6B0726097E3E00CF9A50 /* SceneDelegate.swift */,
-				FA7F6B0926097E3E00CF9A50 /* ViewController.swift */,
 				FA7F6B0B26097E3E00CF9A50 /* Main.storyboard */,
 				FA7F6B0E26097E4200CF9A50 /* Assets.xcassets */,
 				FA7F6B1026097E4200CF9A50 /* LaunchScreen.storyboard */,
 				FA7F6B1326097E4200CF9A50 /* Info.plist */,
+				FA7F6B242609835500CF9A50 /* Constants */,
+				FA7F6B28260983F700CF9A50 /* Data */,
+				FA7F6B202609823D00CF9A50 /* Service */,
+				FA7F6B1F2609823600CF9A50 /* Model */,
+				FA7F6B432609925C00CF9A50 /* View */,
+				FA7F6B1E2609822B00CF9A50 /* Controller */,
 			);
 			path = SQLiteDemo;
+			sourceTree = "<group>";
+		};
+		FA7F6B1E2609822B00CF9A50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B212609827600CF9A50 /* HomePageVC.swift */,
+				FA7F6B4026098FB700CF9A50 /* FileSQLiteVC.swift */,
+				FA7F6B572609C1D700CF9A50 /* FileDBVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA7F6B1F2609823600CF9A50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B3B26098D1200CF9A50 /* FileDB */,
+				FA7F6B3A26098CFD00CF9A50 /* FileSQLITE */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA7F6B202609823D00CF9A50 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B3626098A2B00CF9A50 /* FileDB */,
+				FA7F6B3526098A1500CF9A50 /* FIleSQLITE */,
+				FA7F6B2E2609845500CF9A50 /* Database */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA7F6B242609835500CF9A50 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B252609839C00CF9A50 /* Extensions.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA7F6B28260983F700CF9A50 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B2A2609842200CF9A50 /* boi.db */,
+				FA7F6B292609842200CF9A50 /* xemboi.sqlite */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA7F6B2E2609845500CF9A50 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B312609873C00CF9A50 /* SQLiteDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FA7F6B3526098A1500CF9A50 /* FIleSQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B3726098A9400CF9A50 /* NienmenhEntity.swift */,
+			);
+			path = FIleSQLITE;
+			sourceTree = "<group>";
+		};
+		FA7F6B3626098A2B00CF9A50 /* FileDB */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B4D2609A29700CF9A50 /* BoibaiEntity.swift */,
+			);
+			path = FileDB;
+			sourceTree = "<group>";
+		};
+		FA7F6B3A26098CFD00CF9A50 /* FileSQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B3C26098D8D00CF9A50 /* NienmenhModel.swift */,
+			);
+			path = FileSQLITE;
+			sourceTree = "<group>";
+		};
+		FA7F6B3B26098D1200CF9A50 /* FileDB */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B542609A60600CF9A50 /* BoibaiModel.swift */,
+			);
+			path = FileDB;
+			sourceTree = "<group>";
+		};
+		FA7F6B432609925C00CF9A50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B462609929400CF9A50 /* FileDB */,
+				FA7F6B452609928A00CF9A50 /* FileSQLITE */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA7F6B452609928A00CF9A50 /* FileSQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B48260993E200CF9A50 /* NienmenhTVC.swift */,
+				FA7F6B49260993E200CF9A50 /* NienmenhTVC.xib */,
+			);
+			path = FileSQLITE;
+			sourceTree = "<group>";
+		};
+		FA7F6B462609929400CF9A50 /* FileDB */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F6B5A2609C21F00CF9A50 /* BoibaiTVC.swift */,
+				FA7F6B5B2609C21F00CF9A50 /* BoibaiTVC.xib */,
+			);
+			path = FileDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA7F6B1626097E4200CF9A50 /* Build configuration list for PBXNativeTarget "SQLiteDemo" */;
 			buildPhases = (
+				CE1F2BF2930570D0E55C9BE8 /* [CP] Check Pods Manifest.lock */,
 				FA7F6AFE26097E3E00CF9A50 /* Sources */,
 				FA7F6AFF26097E3E00CF9A50 /* Frameworks */,
 				FA7F6B0026097E3E00CF9A50 /* Resources */,
+				D42B80E3893589276E344C8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +296,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7F6B2C2609842200CF9A50 /* boi.db in Resources */,
 				FA7F6B1226097E4200CF9A50 /* LaunchScreen.storyboard in Resources */,
+				FA7F6B2B2609842200CF9A50 /* xemboi.sqlite in Resources */,
+				FA7F6B4B260993E200CF9A50 /* NienmenhTVC.xib in Resources */,
 				FA7F6B0F26097E4200CF9A50 /* Assets.xcassets in Resources */,
 				FA7F6B0D26097E3E00CF9A50 /* Main.storyboard in Resources */,
+				FA7F6B5D2609C21F00CF9A50 /* BoibaiTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE1F2BF2930570D0E55C9BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SQLiteDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42B80E3893589276E344C8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SQLiteDemo/Pods-SQLiteDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SQLiteDemo/Pods-SQLiteDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SQLiteDemo/Pods-SQLiteDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA7F6AFE26097E3E00CF9A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7F6B0A26097E3E00CF9A50 /* ViewController.swift in Sources */,
+				FA7F6B4126098FB700CF9A50 /* FileSQLiteVC.swift in Sources */,
+				FA7F6B4A260993E200CF9A50 /* NienmenhTVC.swift in Sources */,
 				FA7F6B0626097E3E00CF9A50 /* AppDelegate.swift in Sources */,
 				FA7F6B0826097E3E00CF9A50 /* SceneDelegate.swift in Sources */,
+				FA7F6B4E2609A29700CF9A50 /* BoibaiEntity.swift in Sources */,
+				FA7F6B222609827600CF9A50 /* HomePageVC.swift in Sources */,
+				FA7F6B5C2609C21F00CF9A50 /* BoibaiTVC.swift in Sources */,
+				FA7F6B3D26098D8D00CF9A50 /* NienmenhModel.swift in Sources */,
+				FA7F6B262609839C00CF9A50 /* Extensions.swift in Sources */,
+				FA7F6B582609C1D700CF9A50 /* FileDBVC.swift in Sources */,
+				FA7F6B3826098A9400CF9A50 /* NienmenhEntity.swift in Sources */,
+				FA7F6B322609873C00CF9A50 /* SQLiteDatabase.swift in Sources */,
+				FA7F6B552609A60600CF9A50 /* BoibaiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +511,7 @@
 		};
 		FA7F6B1726097E4200CF9A50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38104A6A70199CA60450D34 /* Pods-SQLiteDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +530,7 @@
 		};
 		FA7F6B1826097E4200CF9A50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60350B51D56B731D42C8C673 /* Pods-SQLiteDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

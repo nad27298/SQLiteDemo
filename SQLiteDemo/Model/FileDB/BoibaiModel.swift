@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class BoibaiModel {
+    
+    var cardid = 0
+    var content = ""
+    
+    init(cardid: Int, content: String) {
+        self.cardid = cardid
+        self.content = content
+    }
+    
+}

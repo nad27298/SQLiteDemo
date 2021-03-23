@@ -1,24 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iVq-rZ-VKE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomePage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePageVC" id="BYZ-38-t0r" customClass="HomePageVC" customModule="SQLiteDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hck-t1-zh4">
+                                <rect key="frame" x="128.5" y="309" width="157" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="DTL-Or-hW5"/>
+                                    <constraint firstAttribute="width" constant="157" id="Mp7-Jq-auk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="File SQLITE"/>
+                                <connections>
+                                    <action selector="btn_sqlite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyO-qn-cua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi2-dP-v2s">
+                                <rect key="frame" x="128.5" y="481" width="157" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zi2-dP-v2s" secondAttribute="height" multiplier="157:57" id="1c5-by-nH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="File DB"/>
+                                <connections>
+                                    <action selector="btn_db:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0J-Th-NE0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zi2-dP-v2s" firstAttribute="leading" secondItem="hck-t1-zh4" secondAttribute="leading" id="EnI-qo-oJY"/>
+                            <constraint firstItem="Zi2-dP-v2s" firstAttribute="top" secondItem="hck-t1-zh4" secondAttribute="bottom" constant="115" id="LDt-QR-e8c"/>
+                            <constraint firstItem="hck-t1-zh4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="M1W-Ct-jJo"/>
+                            <constraint firstItem="hck-t1-zh4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="221" id="k1g-UZ-9rP"/>
+                            <constraint firstItem="Zi2-dP-v2s" firstAttribute="trailing" secondItem="hck-t1-zh4" secondAttribute="trailing" id="vMy-Ip-V9q"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="HomePage" id="jh7-sR-8bg"/>
+                    <connections>
+                        <segue destination="ceB-fl-IpM" kind="push" id="ZQW-Eu-MCc"/>
+                        <segue destination="H2T-QW-TpZ" kind="push" id="MfQ-n8-OID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="102.45535714285714"/>
+        </scene>
+        <!--FIleSQLITE-->
+        <scene sceneID="Pwf-hC-9KP">
+            <objects>
+                <viewController storyboardIdentifier="FileSQLiteVC" id="H2T-QW-TpZ" customClass="FileSQLiteVC" customModule="SQLiteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Nl-9e-XMW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-K5-mf3">
+                                <rect key="frame" x="20" y="108" width="374" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="H2T-QW-TpZ" id="sTG-8N-qb3"/>
+                                    <outlet property="delegate" destination="H2T-QW-TpZ" id="xGI-6w-3e6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aST-xb-NIK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aST-xb-NIK" firstAttribute="bottom" secondItem="ixY-K5-mf3" secondAttribute="bottom" id="9G3-af-Rty"/>
+                            <constraint firstItem="aST-xb-NIK" firstAttribute="trailing" secondItem="ixY-K5-mf3" secondAttribute="trailing" constant="20" id="ZuO-TP-UgW"/>
+                            <constraint firstItem="ixY-K5-mf3" firstAttribute="top" secondItem="aST-xb-NIK" secondAttribute="top" constant="20" id="f33-pQ-0vD"/>
+                            <constraint firstItem="ixY-K5-mf3" firstAttribute="leading" secondItem="aST-xb-NIK" secondAttribute="leading" constant="20" id="xtX-Vb-tat"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FIleSQLITE" id="8BJ-b4-2uw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="woh-f9-rgG">
+                            <connections>
+                                <action selector="buttonEdit:" destination="H2T-QW-TpZ" id="QwP-fO-SKY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblview" destination="ixY-K5-mf3" id="Kn4-ME-GiD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAO-r9-8pG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="-303"/>
+        </scene>
+        <!--FileDB-->
+        <scene sceneID="5Jm-ff-GH7">
+            <objects>
+                <viewController storyboardIdentifier="FileDBVC" id="ceB-fl-IpM" customClass="FileDBVC" customModule="SQLiteDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t4e-cA-N6H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DU0-q9-rdi">
+                                <rect key="frame" x="20" y="108" width="374" height="754"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ceB-fl-IpM" id="lag-Bm-xak"/>
+                                    <outlet property="delegate" destination="ceB-fl-IpM" id="NCw-Bo-hSV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uvL-gE-eXq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uvL-gE-eXq" firstAttribute="trailing" secondItem="DU0-q9-rdi" secondAttribute="trailing" constant="20" id="DaA-Zm-iDl"/>
+                            <constraint firstItem="DU0-q9-rdi" firstAttribute="leading" secondItem="uvL-gE-eXq" secondAttribute="leading" constant="20" id="RsQ-PR-KKG"/>
+                            <constraint firstItem="uvL-gE-eXq" firstAttribute="bottom" secondItem="DU0-q9-rdi" secondAttribute="bottom" id="gRz-p1-f48"/>
+                            <constraint firstItem="DU0-q9-rdi" firstAttribute="top" secondItem="uvL-gE-eXq" secondAttribute="top" constant="20" id="q7W-mc-h79"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FileDB" id="4p3-6F-1Uf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="hNF-wK-uX9">
+                            <connections>
+                                <action selector="buttonEdit:" destination="ceB-fl-IpM" id="EsA-jq-JLT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tblView" destination="DU0-q9-rdi" id="rPE-7f-wtQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZV-Us-aOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UzZ-3z-qk6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iVq-rZ-VKE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bdz-EV-XWI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3W0-mb-V5r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Tl-UL-gwz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="102.45535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
